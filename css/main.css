@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* border: solid; */
+}
+.container{
+    width: 100vw;
+    padding: 0;
+    /* border: solid; */
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    background: -o-linear-gradient(skyblue,grey);
+    background: -webkit-linear-gradient(skyblue,grey);
+    background: -moz-linear-gradient(grey,skyblue);
+    background-image: linear-gradient(grey,skyblue);
+
+
+}
+nav li{
+    list-style: none;
+    padding: 1%;
+    margin: 1% auto;
+    /* background:skyblue; */
+    border-radius: 10px;
+
+}
+.nav-list
+{
+    display: flex;
+}
+nav a{
+    font-size: 1.5em;
+    border-radius: 1px;
+    color: black;
+    text-decoration: none;
+}
+nav{
+    text-align: center;
+    padding: auto;
+    width: 100%;
+    border: solid;
+}
+nav a:hover{
+
+}
+
+.photo-about{
+    width: 100%;
+    display: inline-block;
+    
+}
+ .left{
+    display: inline-block;
+    width: 30%;
+    margin: 2% 0 0 2%;
+    float: left;
+    
+}
+.data{
+    font-size: 16px;
+}
+.profile{
+    width: 100%;
+    margin: 2px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px;
+}
+.right{
+    display: inline-block;
+    width: 60%;
+   
+    float: right;
+
+}
+li{
+    list-style: none;
+    padding: 4%;
+    
+}
+.right li span:first-child
+{
+
+    width:30%;
+    display: inline-block;
+    text-align: left;
+    font-size: 3rem;
+    /* border: solid; */
+    
+}
+
+
+.right li span:nth-child(2) 
+{
+    width: 60%;
+    display: inline-block;
+    font-size: 2rem;
+    padding-left: 2%;
+    /* border: solid; */
+}
+.education{
+    margin-left: 10%;
+}
+
+.edu {
+    width: 100%;
+    clear: both;
+    /* font-size: 3em; */
+    text-align: center;
+    color: blue;
+
+}
+.edu li{
+    padding: 10px;
+    /* border: solid; */
+    background-color: red;
+}
+.education span{
+    display: block;
+}
+.year{
+    color: blue;
+    font-size: 2rem;
+}
+.degree{
+    font-size: 3rem;
+
+}
+.university{
+    font-size: 2rem;
+}
+.Desc{
+    font-size: 2rem;
+}
+
+.education span{
+    /* display: inline; */
+    /* border: solid; */
+    margin-top: 1%;
+}
+.skills{
+    margin-left: 15%;
+    /* border: solid; */
+}
+.progress-container{
+    display: inline-block;
+    width: 45%;
+    margin: 1%;
+    /* padding: 10%; */
+}
+.progressbar{
+    width: 100%;
+    /* border-radius: 5px; */
+}
+.progress-container span:first-child{
+    font-size: 2rem;
+    float: left;
+}
+.progress-container span:nth-child(2){
+    font-size: 2rem;
+    float: right;
+}
+
+.section-label {
+    display :block;
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    color: blue;
+
+}
+.certificate-container{
+    display: block;
+    margin-left: 15%;
+    /* border: solid; */
+}
+.certificate{
+    display: inline-block;
+    width: 45%;
+    margin: 2%;
+    /* border: solid; */
+}
+img{
+    width: 100%;
+}
+.large-view{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    background: white;
+    width: 80vw;
+    height: 80vh;
+    display: none;
+}
+
+@media screen and (max-width:1200px)
+{
+    html{
+        font-size: 75%;
+    }
+    .right{
+        /* background:red; */
+        width:60%;
+        
+    }
+    .data{
+        font-size:5px;
+    }
+    .left{
+        /* display: none; */
+
+    }
+}
+@media screen and (max-width:900px)
+{
+    html{
+        font-size: 50%;
+    }
+    .right{
+        /* background:yellow; */
+        width:60%;
+        
+    }
+    .data{
+        font-size:5px;
+    }
+    .left{
+        /* display: none; */
+
+    }
+    .skills,.certificate-container,.education{
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width:600px)
+{
+   
+    .right{
+        /* background: green; */
+        width:100%;
+        
+    }
+    .data{
+        font-size:10px;
+    }
+    .left{
+        display: none;
+
+    }
+    .progress-container{
+        width: 90%;
+    }
+    .skills,.certificate-container,.education{
+        margin-left: 0;
+    }
+}
