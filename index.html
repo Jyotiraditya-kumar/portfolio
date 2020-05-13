@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width" initial-scale=1>
         <title>Jyotiraditya Kumar</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/gallery.js"></script>
+        <script src="https://kit.fontawesome.com/80adfb22a9.js" crossorigin="anonymous"></script>
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     </head>
     <body>
@@ -90,41 +92,45 @@
             <div class="certificate-container" id="certificates">
                 <span class="section-label">Certificates</span>
                 <div class="certificate">
-                    <img src="images/html5.jpg">
+                    <img src="images/html5.jpg" onclick="upDate(this)" >
                     <span class="certi-label">HTML5</span>
                     <a class="certi-link" href="https://coursera.org/share/768928964b6af603f77baf20049d516b">View Certificate on website</a>
                 </div>
                 <div class="certificate">
-                    <img src="images/html5.jpg">
+                    <img src="images/html5.jpg" onclick="upDate(this)">
                     <span class="certi-label">HTML5</span>
                     <a class="certi-link" href="https://coursera.org/share/768928964b6af603f77baf20049d516b">View Certificate on website</a>
                 </div>
                
                 <div class="certificate">
-                    <img src="images/html5.jpg">
+                    <img src="images/html5.jpg" onclick="upDate(this)">
                     <span class="certi-label">HTML5</span>
                     <a class="certi-link" href="https://coursera.org/share/768928964b6af603f77baf20049d516b">View Certificate on website</a>
                 </div>
                 
                 <div class="certificate">
-                    <img src="images/html5.jpg">
+                    <img src="images/html5.jpg" onclick="upDate(this)">
                     <span class="certi-label">HTML5</span>
                     <a class="certi-link" href="https://coursera.org/share/768928964b6af603f77baf20049d516b">View Certificate on website</a>
                 </div>
     
                 <div class="certificate">
-                    <img src="images/html5.jpg">
+                    <img src="images/html5.jpg" onclick="upDate(this)">
                     <span class="certi-label">HTML5</span>
                     <a class="certi-link" href="https://coursera.org/share/768928964b6af603f77baf20049d516b">View Certificate on website</a>
                 </div>
                 
                 <div class="certificate">
-                    <img src="images/html5.jpg">
+                    <img src="images/html5.jpg" onclick="upDate(this)">
                     <span class="certi-label">HTML5</span>
                     <a class="certi-link" href="https://coursera.org/share/768928964b6af603f77baf20049d516b">View Certificate on website</a>
                 </div>
             </div>
-            <div class="large-view"></div>
+            <div class="large-view" id="lview">
+                
+                <span class="close" id="close" onclick="unDo()"><i class="far fa-times-circle" ></i></span>
+                <img id="image" src="">
+            </div>
         </div>
         
         
