@@ -5,14 +5,14 @@ body{
     /* border: solid; */
 }
 .container{
-    width: 100vw;
+    width: 100%;
     padding: 0;
     /* border: solid; */
 }
 header{
     position: sticky;
     top: 0;
-    width: 100%;
+    /* width: 100%; */
     margin: auto;
     left: 0;
     background: -o-linear-gradient(skyblue,grey);
@@ -33,6 +33,7 @@ nav li{
 .nav-list
 {
     display: flex;
+    flex-direction: row;
 }
 nav a{
     font-size: 1.5em;
@@ -43,7 +44,7 @@ nav a{
 nav{
     text-align: center;
     padding: auto;
-    width: 100%;
+    /* width: 100%; */
     border: solid;
 }
 nav a:hover{
@@ -71,6 +72,7 @@ nav a:hover{
     border-radius: 10px;
     box-shadow: 4px 4px 10px;
 }
+
 .right{
     display: inline-block;
     width: 60%;
@@ -98,7 +100,7 @@ li{
 .right li span:nth-child(2) 
 {
     width: 60%;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 2rem;
     padding-left: 2%;
     /* border: solid; */
@@ -135,7 +137,7 @@ li{
     font-size: 2rem;
 }
 .Desc{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .education span{
@@ -191,12 +193,34 @@ img{
 .large-view{
     position: fixed;
     top: 10%;
-    left: 10%;
+    left: 20%;
     background: white;
-    width: 80vw;
-    height: 80vh;
+    width: 50%;
+    /* height: 40%; */
     display: none;
 }
+#image{
+    width: 100%;
+    margin: 2px;
+    box-shadow: 4px 4px 10px;
+}
+.close{
+    position: absolute;
+    top: 0;
+    display: block;
+    /* width: 20px;
+    height: 20px; */
+    right: 0;
+    /* background-color: white; */
+    z-index: 1;
+    color: red;
+    border: solid;
+}
+.close i{
+    font-size: 20px;
+    background: white;
+}
+
 
 @media screen and (max-width:1200px)
 {
@@ -239,14 +263,46 @@ img{
 }
 @media screen and (max-width:600px)
 {
+    html{
+        font-size: 40%;
+    }
    
     .right{
         /* background: green; */
         width:100%;
+        border: solid;
         
     }
-    .data{
-        font-size:10px;
+    
+    .left{
+        display: none;
+
+    }
+    .progress-container{
+        width: 90%;
+    }
+    .skills,.certificate-container,.education{
+        margin-left: 0;
+    }
+    .large-view{
+        width: 100%;
+        left: 0;
+    }
+}
+@media screen and (max-width:400px)
+{
+    html{
+        font-size: 40%;
+    }
+   
+    .right{
+        /* background: green; */
+        width:100%;
+        border: solid;
+        
+    }
+    .right li span{
+        display: block;
     }
     .left{
         display: none;
@@ -257,5 +313,9 @@ img{
     }
     .skills,.certificate-container,.education{
         margin-left: 0;
+    }
+    .large-view{
+        width: 100%;
+        left: 0;
     }
 }
