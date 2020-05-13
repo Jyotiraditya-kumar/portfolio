@@ -1,0 +1,151 @@
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: -o-linear-gradient(skyblue,grey);
+    background: -webkit-linear-gradient(skyblue,grey);
+    background: -moz-linear-gradient(grey,skyblue);
+    background-image: linear-gradient(grey,skyblue);
+
+
+}
+.ph{
+    margin-top :5%;
+}
+nav li{
+    list-style: none;
+    padding: 2%;
+    margin: 2%;
+
+}
+
+.nav-list
+{
+    display: flex;
+    flex-direction: row;
+}
+nav a{
+    font-size: 1.5em;
+    border-radius: 1px;
+    color: black;
+    text-decoration: none;
+}
+
+.hamburger{
+    margin-top: 3%;
+}
+
+.profile{
+    width: 100%;
+    margin: 2px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px;
+    /* display: none; */
+}
+
+li{
+    list-style: none;
+    /* padding: 4%; */
+    
+}
+.about{
+    margin:10% auto;
+}
+
+.edu {
+    /* width: 100%; */
+    /* clear: both; */
+    /* font-size: 3em; */
+    text-align: center;
+    color: blue;
+
+}
+.edu li{
+    /* padding: 10px; */
+    /* border: solid; */
+    background-color: red;
+}
+
+.year{
+    color: blue;
+    font-size: 2rem;
+}
+.degree{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+.university{
+    font-size: 2rem;
+}
+.Desc{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: grey;
+}
+
+.education span{
+    /* display: inline; */
+    /* border: solid; */
+    margin-top: 1%;
+}
+
+.progress-container{
+    width: 45%;
+    margin: 1%;
+    /* padding: 10%; */
+}
+.progressbar{
+    width: 100%;
+    /* border-radius: 5px; */
+}
+.progress-container span:first-child{
+    font-size: 2rem;
+    float: left;
+}
+.progress-container span:nth-child(2){
+    font-size: 2rem;
+    float: right;
+}
+
+.section-label {
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    color: blue;
+
+}
+.certificate img{
+    width: 100%;
+}
+.large-view{
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    background: white;
+    width: 50%;
+    /* height: 40%; */
+    display: none;
+}
+#image{
+    width: 100%;
+    margin: 2px;
+    box-shadow: 4px 4px 10px;
+}
+.close{
+    position: absolute;
+    top: 0;
+    display: block;
+    /* width: 20px;
+    height: 20px; */
+    right: 0;
+    /* background-color: white; */
+    z-index: 1;
+    color: red;
+    border: solid;
+}
+.close i{
+    font-size: 20px;
+    background: white;
+}

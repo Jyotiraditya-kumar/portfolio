@@ -4,16 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width" initial-scale=1>
         <title>Jyotiraditya Kumar</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/main2.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="js/gallery.js"></script>
         <script src="https://kit.fontawesome.com/80adfb22a9.js" crossorigin="anonymous"></script>
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     </head>
     <body>
-        <div class="container">
-            <header class="header">
-                <span class="hamburger" onclick="menu()"><i class="fas fa-bars"></i>MENU</span>
-                <nav class="navbar collapse">
+        <div class="container main-container">
+            <header class="row">
+                <nav class="col-11 navbar collapse">
                     <ul class="nav-list" id="collapse">
                         <li><a href=# >Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -22,106 +22,122 @@
                         <li><a href="#certificates">Accomplishments</a></li>
                     </ul>
                 </nav>
+                <span class="hamburger col-1" onclick="menu()"><i class="fas fa-bars"></i>MENU</span>
             </header>
-            <div class="photo-about" id="about">
-                <div class="left">
+            <div class="row" id="about">
+                <div class="ph col-sm-4 col-md-4 col-lg-4">
                     <img class="profile" src="images/Profile.jpg" alt="Jyotiradiya Image">
                 </div>
-                <div class="right">
-                    <span class="section-label">About Me</span>
+                <div class="col-sm-8 col-lg-8 col-md-8">
+                    <div class="container about">
+                        <div class="row">
+                            <span class="col-12 section-label">About Me</span>
+                        </div>  
                     <ul>
-                        <li class="data">
-                            <span>Name:</span>
-                            <span>Jyotiraditya Kumar</span>
+                        <li class="row data">
+                            <span class="col-4 col-sm-5 col-md-4 col-lg-4 name">Name:</span>
+                            <span class="col-8 col-sm-7 offset-md-1 col-md-7 offset-lg-1 col-lg-7 val">Jyotiraditya Kumar</span>
                         </li>
-                        <li class="data">
-                                <span>DOB:</span>
-                                <span>October 28,2000</span>
+                        <li class="row data">
+                                <span class="col-4 col-sm-5 col-md-4 col-lg-4 name">DOB:</span>
+                                <span class="col-8 col-sm-7 offset-md-1 col-md-7 offset-lg-1 col-lg-7 val">October 28,2000</span>
                         </li>
-                            <li class="data">
-                                <span>Address:</span>
-                                <span>Village Sabli Hapur,UP</span>
+                            <li class="row data">
+                                <span class="col-4 col-sm-5 col-md-4 col-lg-4 name">Address:</span>
+                                <span class="col-8 col-sm-7 offset-md-1 col-md-7 offset-lg-1 col-lg-7 val">Village Sabli Hapur,UP</span>
                             </li>
-                            <li class="data">
-                                <span>Email:</span>
-                                <span>Tyagijyotiraditya@gmail.com</span>
+                            <li class="row data">
+                                <span class="col-4 col-sm-5 col-md-4 col-lg-4 name">Email:</span>
+                                <span class="col-8 col-sm-7 offset-md-1 col-md-7 offset-lg-1 col-lg-7 val">Tyagijyotiraditya@gmail.com</span>
                             </li>
                     </ul>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="education" id="education">
-                <span class="section-label">Education</span>
+            <div class="container education" id="education">
+
+                <div class="row"> 
+                    <span class="col-lg-12 section-label">Education</span>
+                </div>
                 <ul>
-                    <li>
-                        <span class="year">2018-2022</span>
-                        <span class="degree">Bachelor of Technology in Computer Science and Engineering</span>
-                        <span class="university">KNIT Sultanpur,UP </span>
-                        <p class="Desc"> Graduated from Kamla Nehru Institute of Technology ,a government college affiliated by AKTU
+                    <li class="row">
+                        <span class="col-lg-12 year">2018-2022</span>
+                        <span class="col-lg-12 degree">Bachelor of Technology in Computer Science and Engineering</span>
+                        <span class="col-lg-12 university">KNIT Sultanpur,UP </span>
+                        <p class="col-lg-12 Desc"> Graduated from Kamla Nehru Institute of Technology ,a government college affiliated by AKTU
                             with a GPA of 9.0.
                         </p>
                     </li>
                     <hr>
-                    <li>
-                        <span class="year">2017-2018</span>
-                        <span class="degree">Intermediate with PCM and Computer Science as major subjects</span>
-                        <span class="university">SBM sr. Sec School Hapur </span>
-                        <p class="Desc">Passed Intermediate exams with above 85% in PCM and above 
+                    <li class="row">
+                        <span class="col-lg-12 year">2017-2018</span>
+                        <span class="col-lg-12 degree">Intermediate with PCM and Computer Science as major subjects</span>
+                        <span class="col-lg-12 university">SBM sr. Sec School Hapur </span>
+                        <p class="col-lg-12 Desc">Passed Intermediate exams with above 85% in PCM and above 
                         90% in Computer Science</p>
                     </li>
                 </ul>
             </div>
-            <div class="skills" id="skills">
-                <span class="section-label">Skills</span>
-                <div class="progress-container">
+            <div class="container skills" id="skills">
+                <div class="row">
+                    <span class="offset-lg-2 col-lg-10 section-label">Skills</span>
+                </div>
+                <div class="row">
+                <div class="offset-2 col-8 offset-md-1 col-md-4 offset-lg-1 col-lg-4 progress-container">
                     <span class="skill-name">HTML</span><span class="value">90</span>
                     <progress class="progressbar" max="100"  value=90>90%</progress>
                 </div>
-                <div class="progress-container">
+                <div class="offset-2 col-8 offset-md-1 col-md-4 offset-lg-1 col-lg-4 progress-container">
                     <span class="skill-name">CSS </span><span class="value">90</span>
                     <progress class="progressbar" max="100" value=90>90%</progress>
                 </div>
-                <div class="progress-container">
+                <div class="offset-2 col-8 offset-md-1 col-md-4 offset-lg-1 col-lg-4 progress-container">
                     <span class="skill-name">JavaScript</span><span class="value">75</span>
                     <progress class="progressbar" max="100" value="75">90%</progress>
                 </div>
-                <div class="progress-container">
+                <div class="offset-2 col-8 offset-md-1 col-md-4 offset-lg-1 col-lg-4 progress-container">
                     <span class="skill-name">JQuery</span><span class="value">75</span>
                     <progress class="progressbar" max="100" value=75>90%</progress>
                 </div>
+                </div>
 
             </div>
-            <div class="certificate-container" id="certificates">
-                <span class="section-label">Certificates</span>
-                <div class="certificate">
+            <div class="container certificate-container" id="certificates">
+                <div class="row">
+                    <span class="offset-lg-2 col-lg-10 section-label">Certificates</span>
+                </div>
+               <div class="row">
+                <div class="offset-1 col-5 offset-sm-1 col-sm-5 offset-md-1 col-md-3 offset-lg-1 col-lg-3 certificate">
                     <img src="images/html5.jpg" onclick="upDate(this)" >
                     <span class="certi-label">HTML5</span>
                     <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/3KXNYMAB98JQ">View Certificate on website</a>
                 </div>
-                <div class="certificate">
+                <div class="offset-1 col-5 offset-sm-1 col-sm-5 offset-md-1 col-md-3 offset-lg-1 col-lg-3 certificate">
                     <img src="images/css3.jpg" onclick="upDate(this)">
                     <span class="certi-label">CSS3</span>
                     <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/TBXS37RPQUK2">View Certificate on website</a>
                 </div>
                
-                <div class="certificate">
+                <div class="offset-1 col-5 offset-sm-1 col-sm-5 offset-md-1 col-md-3 offset-lg-1 col-lg-3 certificate">
                     <img src="images/javascript.jpg" onclick="upDate(this)">
                     <span class="certi-label">JavaScript</span>
                     <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/63RQ2NYJ568G">View Certificate on website</a>
                 </div>
                 
-                <div class="certificate">
+                <div class="offset-1 col-5 offset-sm-1 col-sm-5 offset-md-1 col-md-3 offset-lg-1 col-lg-3 certificate">
                     <img src="images/responsive.jpg" onclick="upDate(this)">
                     <span class="certi-label">Responsive Web Designing</span>
                     <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/W37PS7R9FQMH">View Certificate on website</a>
                 </div>
     
-                <div class="certificate">
+                <div class="offset-1 col-5 offset-sm-1 col-sm-5 offset-md-1 col-md-3 offset-lg-1 col-lg-3 certificate">
                     <img src="images/pythonbasic.jpg" onclick="upDate(this)">
                     <span class="certi-label">Python Basic</span>
                     <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/VTYS7GUHH5Q7">View Certificate on website</a>
                 </div>
                 
-                <div class="certificate">
+                <div class="offset-1 col-5 offset-sm-1 col-sm-5 offset-md-1 col-md-3 offset-lg-1 col-lg-3 certificate">
                     <img src="images/datastructure.jpg" onclick="upDate(this)">
                     <span class="certi-label">Pyhton Data Structure</span>
                     <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/2WPXCMEH8FLC">View Certificate on website</a>

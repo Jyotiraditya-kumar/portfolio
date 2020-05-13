@@ -12,7 +12,9 @@ body{
 header{
     position: sticky;
     top: 0;
-    /* width: 100%; */
+    width: 100%;
+    /* min-height: 20px; */
+
     margin: auto;
     left: 0;
     background: -o-linear-gradient(skyblue,grey);
@@ -44,8 +46,16 @@ nav a{
 nav{
     text-align: center;
     padding: auto;
-    /* width: 100%; */
-    border: solid;
+    width: 100%;
+    /* border: solid; */
+}
+.hamburger{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    display: none;
+    /* width: 10%; */
+    /* padding: 10%; */
 }
 nav a:hover{
 
@@ -130,7 +140,8 @@ li{
     font-size: 2rem;
 }
 .degree{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
 
 }
 .university{
@@ -138,6 +149,8 @@ li{
 }
 .Desc{
     font-size: 1.5rem;
+    font-weight: lighter;
+    color: grey;
 }
 
 .education span{
@@ -260,6 +273,14 @@ img{
     .skills,.certificate-container,.education{
         margin-left: 2%;
     }
+    .hamburger{
+        display: none;
+    }
+    .nav-list{
+        flex-direction: row;
+        
+        display: none;
+    }
 }
 @media screen and (max-width:600px)
 {
@@ -270,7 +291,7 @@ img{
     .right{
         /* background: green; */
         width:100%;
-        border: solid;
+        /* border: solid; */
         
     }
     
@@ -288,6 +309,14 @@ img{
         width: 100%;
         left: 0;
     }
+    .hamburger{
+        display: inline-block;
+    }
+    .nav-list{
+        flex-direction: column;
+        
+        display: none;
+    }
 }
 @media screen and (max-width:400px)
 {
@@ -298,7 +327,7 @@ img{
     .right{
         /* background: green; */
         width:100%;
-        border: solid;
+        /* border: solid; */
         
     }
     .right li span{
@@ -317,5 +346,13 @@ img{
     .large-view{
         width: 100%;
         left: 0;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+    .nav-list{
+        flex-direction: column;
+        
+        display: none;
     }
 }

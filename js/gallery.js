@@ -16,3 +16,15 @@ function unDo(){
       
            
        }
+function menu()
+{
+    x=document.getElementById("collapse");
+    if (x.style.display=="none")
+    {
+        x.style.display="flex";
+    }
+    else
+    {
+        x.style.display="none";
+    }
+}
