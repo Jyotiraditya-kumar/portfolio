@@ -90,12 +90,12 @@ nav a:hover{
     float: right;
 
 }
-li{
+.data{
     list-style: none;
     padding: 4%;
     
 }
-.right li span:first-child
+.right .data span:first-child
 {
 
     width:30%;
@@ -107,7 +107,7 @@ li{
 }
 
 
-.right li span:nth-child(2) 
+.right .data span:nth-child(2) 
 {
     width: 60%;
     /* display: inline-block; */
@@ -115,23 +115,11 @@ li{
     padding-left: 2%;
     /* border: solid; */
 }
-.education{
+.education-container{
     margin-left: 10%;
 }
 
-.edu {
-    width: 100%;
-    clear: both;
-    /* font-size: 3em; */
-    text-align: center;
-    color: blue;
 
-}
-.edu li{
-    padding: 10px;
-    /* border: solid; */
-    background-color: red;
-}
 .education span{
     display: block;
 }
@@ -153,13 +141,9 @@ li{
     color: grey;
 }
 
-.education span{
-    /* display: inline; */
-    /* border: solid; */
-    margin-top: 1%;
-}
+
 .skills{
-    margin-left: 15%;
+    margin-left: 10%;
     /* border: solid; */
 }
 .progress-container{
@@ -191,7 +175,7 @@ li{
 }
 .certificate-container{
     display: block;
-    margin-left: 15%;
+    margin-left: 10%;
     /* border: solid; */
 }
 .certificate{
@@ -234,6 +218,47 @@ img{
     background: white;
 }
 
+.contact-container{
+    /*margin:1% 0% 0% 10%;*/
+    /*border: solid; */
+    padding: 10px;
+    text-align: center;
+    justify-content: 
+}
+.icon-container{
+    display: block;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: auto;
+    background: blue;
+    margin: auto;
+    text-align: center;
+}
+.icon{
+    /* height: 50px; */
+    /* line-height: 50px; */
+    color: white;
+}
+.address-card{
+    width: 20%;
+    padding: 2px;
+    box-shadow: 2px 2px 10px;
+    margin: 0 auto;
+    margin-left: 2%;
+    display: inline-block;
+}
+.card-heading{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.address-card .card-heading,.card-details{
+    /* border: solid; */
+    padding: 5%;
+}
+
 
 @media screen and (max-width:1200px)
 {
@@ -270,7 +295,7 @@ img{
         /* display: none; */
 
     }
-    .skills,.certificate-container,.education{
+    .skills,.certificate-container,.education-container{
         margin-left: 2%;
     }
     .hamburger{
@@ -288,11 +313,12 @@ img{
         font-size: 40%;
     }
    
-    .right{
-        /* background: green; */
-        width:100%;
-        /* border: solid; */
-        
+   .right{
+       width:100%;
+        font-weight: bolder;
+        /* border: solid; */ 
+        background-image: url("../images/Profile.jpg"); 
+        background-size: cover;
     }
     
     .left{
@@ -302,7 +328,7 @@ img{
     .progress-container{
         width: 90%;
     }
-    .skills,.certificate-container,.education{
+    .skills,.certificate-container,.education-container{
         margin-left: 0;
     }
     .large-view{
@@ -327,11 +353,10 @@ img{
     .right{
         /* background: green; */
         width:100%;
-        /* border: solid; */
-        
-    }
-    .right li span{
-        display: block;
+        font-weight: bolder;
+        /* border: solid; */ 
+        background-image: url("../images/Profile.jpg"); 
+        background-size: cover;  
     }
     .left{
         display: none;
@@ -340,7 +365,7 @@ img{
     .progress-container{
         width: 90%;
     }
-    .skills,.certificate-container,.education{
+    .skills,.certificate-container,.education-container{
         margin-left: 0;
     }
     .large-view{
