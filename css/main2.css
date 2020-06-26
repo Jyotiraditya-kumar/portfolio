@@ -11,19 +11,27 @@ header{
 
 }
 .ph{
-    margin-top :5%;
+    margin :auto;
+    /* padding-left: 40%; */
 }
-nav li{
-    list-style: none;
-    padding: 2%;
-    margin: 2%;
+.nav-list{
+    display: flex;
+    
+    /* padding: 2%; */
+    /* margin: 2%; */
 
 }
 
-.nav-list
+nav li
 {
     display: flex;
+    width: 25%;
+    list-style: none;
+    border: solid;
     flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-basis: 0; */
+    /* flex-grow: 1; */
 }
 nav a{
     font-size: 1.5em;
@@ -38,7 +46,7 @@ nav a{
 
 .profile{
     width: 100%;
-    margin: 2px;
+    /* margin: 2px; */
     border-radius: 10px;
     box-shadow: 4px 4px 10px;
     /* display: none; */
@@ -48,9 +56,6 @@ li{
     list-style: none;
     /* padding: 4%; */
     
-}
-.about{
-    margin:10% auto;
 }
 
 .edu {
@@ -72,15 +77,15 @@ li{
     font-size: 2rem;
 }
 .degree{
-    font-size: 2.5rem;
+    font-size: 1.1em;
     font-weight: bold;
 
 }
 .university{
-    font-size: 2rem;
+    font-size: 1em;
 }
 .Desc{
-    font-size: 1.5rem;
+    font-size: 0.9em;
     font-weight: lighter;
     color: grey;
 }
@@ -101,24 +106,33 @@ li{
     /* border-radius: 5px; */
 }
 .progress-container span:first-child{
-    font-size: 2rem;
+    font-size: 1em;
     float: left;
 }
 .progress-container span:nth-child(2){
-    font-size: 2rem;
+    font-size: 1em;
     float: right;
+}
+.d-fle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .section-label {
     width: 100%;
     font-size: 3em;
-    text-align: center;
+    text-align: left;
     color: blue;
 
 }
 .certificate img{
     width: 100%;
 }
+.certi-label{
+    display: block;
+}
+
 .large-view{
     position: fixed;
     top: 10%;
@@ -148,4 +162,37 @@ li{
 .close i{
     font-size: 20px;
     background: white;
+}
+.icon-container{
+    display: block;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: auto;
+    background: blue;
+    margin: auto;
+    text-align: center;
+}
+.icon{
+    /* height: 50px; */
+    /* line-height: 50px; */
+    color: white;
+}
+.address-card{
+    padding: 2px;
+    box-shadow: 2px 2px 10px;
+    margin: 0 auto;
+}
+.card-heading{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.address-card .card-heading,.card-details{
+    /* border: solid; */
+    padding: 5%;
+}
+.offset-sm-half{
+    margin-left: 4%;
 }

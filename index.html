@@ -1,169 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width" initial-scale=1>
-        <title>Jyotiraditya Kumar</title>
-        <!-- <link rel="stylesheet" type="text/css" href="css/main2.css"> -->
 
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <script src="js/gallery.js"></script>
-        <script src="https://kit.fontawesome.com/80adfb22a9.js" crossorigin="anonymous"></script>
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <span class="hamburger" onclick="menu()"><i class="fas fa-bars"></i></span>
-                <nav class="navbar collapse">
-                    <ul class="nav-list" id="collapse">
-                        <li><a href=# >Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#certificates">Accomplishments</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="photo-about" id="about">
-                <div class="left">
-                    <img class="profile" src="images/Profile.jpg" alt="Jyotiradiya Image">
-                </div>
-                <div class="right">
-                    <span class="section-label">About Me</span>
-                    <div class="ul">
-                        <div class="data">
-                            <span>Name:</span>
-                            <span>Jyotiraditya Kumar</span>
-                        </div>
-                        <div class="data">
-                                <span>DOB:</span>
-                                <span>October 28,2000</span>
-                        </div>
-                            <div class="data">
-                                <span>Address:</span>
-                                <span>Village Sabli Hapur,UP</span>
-                            </div>
-                            <div class="data">
-                                <span>Email:</span>
-                                <span>Tyagijyotiraditya@gmail.com</span>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            <div class="education-container" id="education">
-                <span class="section-label">Education</span>
-                <div>
-                    <div class="education">
-                        <span class="year">2018-2022</span>
-                        <span class="degree">Bachelor of Technology in Computer Science and Engineering</span>
-                        <span class="university">KNIT Sultanpur,UP </span>
-                        <p class="Desc"> Graduated from Kamla Nehru Institute of Technology ,a government college affiliated by AKTU
-                            with a GPA of 9.0.
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="education">
-                        <span class="year">2017-2018</span>
-                        <span class="degree">Intermediate with PCM and Computer Science as major subjects</span>
-                        <span class="university">SBM sr. Sec School Hapur </span>
-                        <p class="Desc">Passed Intermediate exams with above 85% in PCM and above 
-                        90% in Computer Science</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skills" id="skills">
-                <span class="section-label">Skills</span>
-                <div class="progress-container">
-                    <span class="skill-name">HTML</span><span class="value">90</span>
-                    <progress class="progressbar" max="100"  value=90>90%</progress>
-                </div>
-                <div class="progress-container">
-                    <span class="skill-name">CSS </span><span class="value">90</span>
-                    <progress class="progressbar" max="100" value=90>90%</progress>
-                </div>
-                <div class="progress-container">
-                    <span class="skill-name">JavaScript</span><span class="value">75</span>
-                    <progress class="progressbar" max="100" value="75">90%</progress>
-                </div>
-                <div class="progress-container">
-                    <span class="skill-name">JQuery</span><span class="value">75</span>
-                    <progress class="progressbar" max="100" value=75>90%</progress>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Jyotiraditya Kumar</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/main2.css"> -->
 
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/lnav.css"> -->
+
+
+    <script src="js/gallery.js"></script>
+    <script src="https://kit.fontawesome.com/80adfb22a9.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <script src="js/google-map.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="hamburger" onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+        </header>
+        <nav class="navbar-expand" id="nav">
+
+            <li><a href=#>Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Accomplishments</a></li>
+        </nav>
+        <!-- <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div> -->
+        <nav id="collapse">
+
+            <ul>
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+
+                <li><a href="#">Contact</a></li>
+
+                <li><a href="#">Extra1</a></li>
+
+                <li><a href="#">Extra2</a></li>
+
+                <li><a href="#">Extra3</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="photo-about" id="about">
+            <div class="left">
+                <img class="profile" src="images/Profile.jpg" alt="Jyotiradiya Image">
             </div>
-            <div class="certificate-container" id="certificates">
-                <span class="section-label">Certificates</span>
-                <div class="certificate">
-                    <img src="images/html5.jpg" onclick="upDate(this)" >
-                    <span class="certi-label">HTML5</span>
-                    <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/3KXNYMAB98JQ">View Certificate on website</a>
+            <div class="right">
+                <span class="section-label">About Me</span>
+                <div class="ul">
+                    <div class="data">
+                        <span>Name:</span>
+                        <span>Jyotiraditya Kumar</span>
+                    </div>
+                    <div class="data">
+                        <span>DOB:</span>
+                        <span>October 28,2000</span>
+                    </div>
+                    <div class="data">
+                        <span>Address:</span>
+                        <span>Village Sabli Hapur,UP</span>
+                    </div>
+                    <div class="data">
+                        <span>Email:</span>
+                        <span>Tyagijyotiraditya@gmail.com</span>
+                    </div>
                 </div>
-                <div class="certificate">
-                    <img src="images/css3.jpg" onclick="upDate(this)">
-                    <span class="certi-label">CSS3</span>
-                    <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/TBXS37RPQUK2">View Certificate on website</a>
-                </div>
-               
-                <div class="certificate">
-                    <img src="images/javascript.jpg" onclick="upDate(this)">
-                    <span class="certi-label">JavaScript</span>
-                    <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/63RQ2NYJ568G">View Certificate on website</a>
-                </div>
-                
-                <div class="certificate">
-                    <img src="images/responsive.jpg" onclick="upDate(this)">
-                    <span class="certi-label">Responsive Web Designing</span>
-                    <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/W37PS7R9FQMH">View Certificate on website</a>
-                </div>
-    
-                <div class="certificate">
-                    <img src="images/pythonbasic.jpg" onclick="upDate(this)">
-                    <span class="certi-label">Python Basic</span>
-                    <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/VTYS7GUHH5Q7">View Certificate on website</a>
-                </div>
-                
-                <div class="certificate">
-                    <img src="images/datastructure.jpg" onclick="upDate(this)">
-                    <span class="certi-label">Pyhton Data Structure</span>
-                    <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/2WPXCMEH8FLC">View Certificate on website</a>
-                </div>
-            </div>
-            <div class="large-view" id="lview">
-                
-                <span class="close" id="close" onclick="unDo()"><i class="far fa-times-circle" ></i></span>
-                <img id="image" src="">
             </div>
         </div>
-        <footer>
-            <div class="contact-container" id="contact">
-                    <span class="section-label">Contact Us</span><br>
-                <div class="address-card">
-                    <span class="icon-container"><i class="far fa-address-card icon"></i></span>
-                    <span class="card-heading">Email</span>
-                    <a class="card-details" href="mailto:Tyagijyotiraditya@gmail.com">Tyagijyotiraditya@gmail.com</a>
+        <div class="education-container" id="education">
+            <span class="section-label">Education</span>
+            <div>
+                <div class="education">
+                    <span class="year">2018-2022</span>
+                    <span class="degree">Bachelor of Technology in Computer Science and Engineering</span>
+                    <span class="university">KNIT Sultanpur,UP </span>
+                    <p class="Desc"> Graduated from Kamla Nehru Institute of Technology ,a government college affiliated by AKTU with a GPA of 9.0.
+                    </p>
                 </div>
-                <div class="address-card">
-                    <span class="icon-container"><i class="far fa-address-card icon"></i></span>
-                    <span class="card-heading">Mobile</span>
-                    <span class="card-details">987654321</span>
-                </div>
-                <div class="address-card ">
-                    <span class="icon-container"><i class="far fa-address-card icon"></i></span>
-                    <span class="card-heading">Github</span>
-                    <a class="card-details" href="https://github.com/Jyotiraditya-kumar/">Github</a>
-                </div>
-                <div class="address-card ">
-                    <span class="icon-container"><i class="far fa-address-card icon"></i></span>
-                    <span class="card-heading">Address</span>
-                    <span class="card-details">H.no 127 village Sabli, Hapur</span>
+                <hr>
+                <div class="education">
+                    <span class="year">2017-2018</span>
+                    <span class="degree">Intermediate with PCM and Computer Science as major subjects</span>
+                    <span class="university">SBM sr. Sec School Hapur </span>
+                    <p class="Desc">Passed Intermediate exams with above 85% in PCM and above 90% in Computer Science</p>
                 </div>
             </div>
-        </footer>
-        
-        
-        <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        </div>
+        <div class="skills" id="skills">
+            <span class="section-label">Skills</span>
+            <div class="progress-container">
+                <span class="skill-name">HTML</span><span class="value">90</span>
+                <progress class="progressbar" max="100" value=90>90%</progress>
+            </div>
+            <div class="progress-container">
+                <span class="skill-name">CSS </span><span class="value">90</span>
+                <progress class="progressbar" max="100" value=90>90%</progress>
+            </div>
+            <div class="progress-container">
+                <span class="skill-name">JavaScript</span><span class="value">75</span>
+                <progress class="progressbar" max="100" value="75">90%</progress>
+            </div>
+            <div class="progress-container">
+                <span class="skill-name">JQuery</span><span class="value">75</span>
+                <progress class="progressbar" max="100" value=75>90%</progress>
+            </div>
+
+        </div>
+        <div class="certificate-container" id="certificates">
+            <span class="section-label">Certificates</span>
+            <div class="certificate">
+                <img src="images/html5.jpg" onclick="upDate(this)" alt="Certificate">
+                <span class="certi-label">HTML5</span>
+                <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/3KXNYMAB98JQ">View Certificate on website</a>
+            </div>
+            <div class="certificate">
+                <img src="images/css3.jpg" onclick="upDate(this)" alt="Certificate">
+                <span class="certi-label">CSS3</span>
+                <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/TBXS37RPQUK2">View Certificate on website</a>
+            </div>
+
+            <div class="certificate">
+                <img src="images/javascript.jpg" onclick="upDate(this)" alt="Certificate">
+                <span class="certi-label">JavaScript</span>
+                <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/63RQ2NYJ568G">View Certificate on website</a>
+            </div>
+
+            <div class="certificate">
+                <img src="images/responsive.jpg" onclick="upDate(this)" alt="Certificate">
+                <span class="certi-label">Responsive Web Designing</span>
+                <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/W37PS7R9FQMH">View Certificate on website</a>
+            </div>
+
+            <div class="certificate">
+                <img src="images/pythonbasic.jpg" onclick="upDate(this)" alt="Certificate">
+                <span class="certi-label">Python Basic</span>
+                <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/VTYS7GUHH5Q7">View Certificate on website</a>
+            </div>
+
+            <div class="certificate">
+                <img src="images/datastructure.jpg" onclick="upDate(this)" alt="Certificate">
+                <span class="certi-label">Pyhton Data Structure</span>
+                <a class="certi-link" href="https://www.coursera.org/account/accomplishments/records/2WPXCMEH8FLC">View Certificate on website</a>
+            </div>
+        </div>
+        <div class="large-view" id="lview">
+
+            <span class="close" id="close" onclick="unDo()"><i class="far fa-times-circle" ></i></span>
+            <img id="image" src="#" alt="certificate">
+        </div>
+
+        <div class="contact-container">
+
+            <span class="section-label">Contact Us</span>
+            <!-- <div class="contact"> -->
+
+            <div class="form">
+                <span>How Can we help you</span>
+                <form>
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" id="Name" placeholder="Name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" placeholder="Email">
+                    <label for="mob">Mobile No.</label>
+                    <input type="tel" name="Mob" id="mob" placeholder="Mobile No.">
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" name="occupation" placeholder="Occupation">
+                    <label for="message">Message</label>
+                    <textarea placeholder="Your Message...." id="message" name="message"></textarea>
+                    <input type="submit">
+                </form>
+                <!-- </div> -->
+            </div>
+            <div class="googleMap" id="googleMap"></div>
+
+
+
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHHgF1Nv2BUNVn0oQIly1eyYC3gm4dMkM&callback=myMap"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
-    </body>
+</body>
+
 </html>

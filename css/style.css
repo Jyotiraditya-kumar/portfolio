@@ -18,11 +18,13 @@
 [class*="col-"]
 {
     float: left;
-    padding: 1vw;
+    padding: 1vmin;
     width: 100%;
 }
 .container{
     width: 100%;
+    padding: 2% 0;
+    margin: 2% 0 4% 0;
 }
 .name{
     font-size: 3.2vw;
@@ -89,7 +91,24 @@
     .ph{display: inline-block;}
     .nav-list{
         display: none;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    .year{
+        color: blue;
+        font-size: 1.1em;
+    }
+    .degree{
+        font-size: 1em;
+        font-weight: bold;
+    
+    }
+    .university{
+        font-size: 1em;
+    }
+    .Desc{
+        font-size: 0.9em;
+        font-weight: lighter;
+        color: grey;
     }
 }
 @media screen and (min-width:768px)
@@ -126,6 +145,23 @@
     .hamburger{
         display: none;
     }
+    .year{
+        color: blue;
+        font-size: 2rem;
+    }
+    .degree{
+        font-size: 2.5rem;
+        font-weight: bold;
+    
+    }
+    .university{
+        font-size: 1.5vw;
+    }
+    .Desc{
+        font-size: 1.5rem;
+        font-weight: lighter;
+        color: grey;
+    }
 }
 @media screen and (min-width:1200px)
 {
@@ -157,10 +193,26 @@
     .ph{display: inline-block;}
     .nav-list{
         display: flex;
-        flex-direction: row;
     }
     .hamburger{
         display: none;
+    }
+    .year{
+        color: blue;
+        font-size: 2rem;
+    }
+    .degree{
+        font-size: 2.5rem;
+        font-weight: bold;
+    
+    }
+    .university{
+        font-size: 1.5vw;
+    }
+    .Desc{
+        font-size: 1.5rem;
+        font-weight: lighter;
+        color: grey;
     }
 }
 
