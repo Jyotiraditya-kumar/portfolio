@@ -18,9 +18,11 @@ function unDo() {
 function openNav() {
     x = document.getElementById("collapse");
     if (window.matchMedia("(max-width:400px)").matches) {
-        x.style.width = "150px";
+        x.style.width = "200px";
+
     } else if (window.matchMedia("(max-width:600px)").matches) {
-        x.style.width = "200px"
+        x.style.width = "250px";
+
     }
 
 
