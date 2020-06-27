@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.sticky-footer {
+    width: 100%;
+    position: sticky;
+    left: 0;
+    padding: 10px;
+    height: 60px;
+    background-color: gray;
+    bottom: 0px;
+}
+
+.sticky-footer span {
+    display: inline-block;
+    width: 30%;
+    /* border: solid; */
+    font-size: 25px;
+}
+
+.sticky-footer a {
+    display: inline-block;
+    /* width: 10%; */
+    /* font-size: 16px; */
+    /* border: solid; */
+    padding: 5px 10px;
+}
+
+.sticky-footer i {
+    display: inline-block;
+    /* width: 20px; */
+}
+
+.sticky-footer form {
+    float: right;
+    width: 50%;
+    border: solid;
+}
+
+.sticky-footer input[type="email"] {
+    width: 80%;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.sticky-footer input[type="submit"] {
+    width: 100px;
+    font-size: 16px;
+    display: inline-block;
+}

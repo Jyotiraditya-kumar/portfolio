@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    /* border: solid; */
+    border: solid;
 }
 
 .container {
@@ -19,14 +19,19 @@ body {
     width: 100%;
     height: 0px;
     left: 0;
-    background-color: red;
-    /* background: -o-linear-gradient(skyblue, grey);
+    /* z-index: 1; */
+    /* background-color: red;
+    background: -o-linear-gradient(skyblue, grey);
     background: -webkit-linear-gradient(skyblue, grey);
     background: -moz-linear-gradient(grey, skyblue);
-    background-image: linear-gradient(grey, skyblue); */
+    background: linear-gradient(grey, skyblue); */
 }
 
 .navbar-expand {
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
     display: block;
     width: 100%;
     background-color: gray;
@@ -47,14 +52,14 @@ body {
 }
 
 .navbar-expand a {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: black;
     /* line-height: 100%; */
     text-decoration: none;
     display: block;
     margin: auto;
     float: left;
-    padding: 10px 20px;
+    padding: 0px 20px;
 }
 
 nav a:hover {
@@ -90,7 +95,7 @@ nav a:hover {
     overflow-x: hidden;
 }
 
-#collapse a {
+#collapse li a {
     text-decoration: none;
     color: gray;
     transition: 0.6s;
@@ -98,6 +103,12 @@ nav a:hover {
     display: block;
     margin-left: -40px;
     padding: 10px 20px 10px 30px;
+}
+
+#collapse a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
 }
 
 .closebtn {
@@ -274,10 +285,12 @@ img {
 }
 
 .contact-container {
+    overflow: hidden;
     /* border: solid; */
 }
 
 .form {
+    display: inline-block;
     width: 42%;
     /* height: 400px; */
     float: left;
@@ -294,6 +307,7 @@ img {
 }
 
 .googleMap {
+    display: inline-block;
     margin-top: 60px;
     padding: 1% 0 0 0;
     width: 50%;
@@ -323,6 +337,55 @@ textarea {
 
 input[type="submit"] {
     width: 100px;
+}
+
+.sticky-footer {
+    width: 100%;
+    position: sticky;
+    left: 0;
+    padding: 5px;
+    height: 60px;
+    background-color: gray;
+    bottom: 0px;
+}
+
+.sticky-footer span {
+    display: inline-block;
+    width: 20%;
+    /* border: solid; */
+    font-size: 16px;
+}
+
+.sticky-footer a {
+    display: inline-block;
+    /* width: 10%; */
+    /* font-size: 16px; */
+    /* border: solid; */
+    padding: 5px 10px 0px;
+}
+
+.sticky-footer i {
+    display: inline-block;
+    /* width: 20px; */
+}
+
+.sticky-footer form {
+    float: right;
+    width: 70%;
+    margin-top: 5px;
+    /* border: solid; */
+}
+
+.sticky-footer input[type="email"] {
+    width: 80%;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.sticky-footer input[type="submit"] {
+    width: 100px;
+    font-size: 16px;
+    display: inline-block;
 }
 
 @media screen and (max-width:1200px) {
@@ -359,6 +422,18 @@ input[type="submit"] {
     .certificate-container,
     .education-container {
         margin-left: 2%;
+    }
+    .sticky-footer form input[type="email"] {
+        width: 60%;
+        /* border: solid; */
+        font-size: 12px;
+    }
+    .sticky-footer form input[type="submit"] {
+        width: 30%;
+        font-size: 12px;
+    }
+    .sticky-footer span {
+        display: none;
     }
 }
 
@@ -404,6 +479,22 @@ input[type="submit"] {
         margin-top: 5px;
         width: 90%;
     }
+    .sticky-footer form {
+        width: 100%;
+    }
+    .sticky-footer form input[type="email"] {
+        width: 60%;
+        /* border: solid; */
+        font-size: 12px;
+    }
+    .sticky-footer form input[type="submit"] {
+        width: 30%;
+        font-size: 12px;
+    }
+    .newsletter-icons,
+    .sticky-footer span {
+        display: none;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -419,10 +510,14 @@ input[type="submit"] {
         /* width: 50%; */
         /* display: none; */
     }
-    #collapse a {
+    #collapse li a {
         font-size: 16px;
         padding: 10px 20px 10px 30px;
         /* height: 100%; */
+    }
+    #collapse i {
+        font-size: 25px;
+        padding: 10px 10px 10px 10px;
     }
     .right {
         /* background: green; */
@@ -464,7 +559,23 @@ input[type="submit"] {
         width: 100%;
         font-size: 16px;
     }
-    .newsletter-icons {
+    .sticky-footer {
+        height: 40px;
+    }
+    .sticky-footer form {
+        width: 100%;
+    }
+    .sticky-footer form input[type="email"] {
+        width: 60%;
+        /* border: solid; */
+        font-size: 12px;
+    }
+    .sticky-footer form input[type="submit"] {
+        width: 30%;
+        font-size: 12px;
+    }
+    .newsletter-icons,
+    .sticky-footer span {
         display: none;
     }
 }

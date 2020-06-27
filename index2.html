@@ -13,7 +13,7 @@
     <body>
         <div class="container main-container">
             <header class="row">
-                <nav class="col-11 navbar collapse">
+                <nav class="col-12 navbar collapse">
                     <ul class="nav-list" id="collapse">
                         <li><a href=# >Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -24,15 +24,20 @@
                 </nav>
                 <span class="hamburger col-1" onclick="menu()"><i class="fas fa-bars"></i>MENU</span>
             </header>
+            <div class="container about-container">
             <div class="row" id="about">
-                <div class="ph col-sm-4 col-md-4 col-lg-4">
-                    <img class="profile" src="images/Profile.jpg" alt="Jyotiradiya Image">
+                <div class="row">
+                    <span class="offset-lg-4 col-lg-4 section-label">About Me</span>
                 </div>
-                <div class="col-sm-8 col-lg-8 col-md-8">
+                <div class="row combine-photo-info" style="margin: auto;">
+                <div class="ph offset-lg col-sm-3 col-md-3 col-lg-3">
+                    <div class="container">
+                    <img class="profile" src="images/Profile.jpg" alt="Jyotiradiya Image">
+                    </div>
+                </div>
+                <div class="col-sm-9 col-lg-8 col-md-9">
                     <div class="container about">
-                        <div class="row">
-                            <span class="col-12 section-label">About Me</span>
-                        </div>  
+                          
                     <ul>
                         <li class="row data">
                             <span class="col-4 col-sm-5 col-md-4 col-lg-4 name">Name:</span>
@@ -52,51 +57,52 @@
                             </li>
                     </ul>
                     </div>
-                    
+                </div>   
+                </div>
                 </div>
             </div>
             <div class="container education" id="education">
 
                 <div class="row"> 
-                    <span class="col-lg-12 section-label">Education</span>
+                    <span class="offset-lg-1 col-lg-11 section-label">Education</span>
                 </div>
                 <ul>
                     <li class="row">
-                        <span class="col-lg-12 year">2018-2022</span>
-                        <span class="col-lg-12 degree">Bachelor of Technology in Computer Science and Engineering</span>
-                        <span class="col-lg-12 university">KNIT Sultanpur,UP </span>
-                        <p class="col-lg-12 Desc"> Graduated from Kamla Nehru Institute of Technology ,a government college affiliated by AKTU
+                        <span class="offset-lg-1 col-lg-11 year">2018-2022</span>
+                        <span class="offset-lg-1 col-lg-11 degree">Bachelor of Technology in Computer Science and Engineering</span>
+                        <span class="offset-lg-1 col-lg-11 university">KNIT Sultanpur,UP </span>
+                        <p class="offset-lg-1 col-lg-11 Desc"> Graduated from Kamla Nehru Institute of Technology ,a government college affiliated by AKTU
                             with a GPA of 9.0.
                         </p>
                     </li>
                     <hr>
                     <li class="row">
-                        <span class="col-lg-12 year">2017-2018</span>
-                        <span class="col-lg-12 degree">Intermediate with PCM and Computer Science as major subjects</span>
-                        <span class="col-lg-12 university">SBM sr. Sec School Hapur </span>
-                        <p class="col-lg-12 Desc">Passed Intermediate exams with above 85% in PCM and above 
+                        <span class="offset-lg-1 col-lg-11 year">2017-2018</span>
+                        <span class="offset-lg-1 col-lg-11 degree">Intermediate with PCM and Computer Science as major subjects</span>
+                        <span class="offset-lg-1 col-lg-11 university">SBM sr. Sec School Hapur </span>
+                        <p class="offset-lg-1 col-lg-11 Desc">Passed Intermediate exams with above 85% in PCM and above 
                         90% in Computer Science</p>
                     </li>
                 </ul>
             </div>
             <div class="container skills" id="skills">
                 <div class="row">
-                    <span class="offset-lg-2 col-lg-10 section-label">Skills</span>
+                    <span class="offset-lg-1 col-lg-10 section-label">Skills</span>
                 </div>
                 <div class="row">
-                <div class="offset-2 col-8 offset-md-1 col-md-4 offset-lg-1 col-lg-4 progress-container">
+                <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-4 progress-container">
                     <span class="skill-name">HTML</span><span class="value">90</span>
                     <progress class="progressbar" max="100"  value=90>90%</progress>
                 </div>
-                <div class="offset-2 col-8 offset-md-1 col-md-4 offset-lg-1 col-lg-4 progress-container">
+                <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-4 progress-container">
                     <span class="skill-name">CSS </span><span class="value">90</span>
                     <progress class="progressbar" max="100" value=90>90%</progress>
                 </div>
-                <div class="offset-2 col-8 offset-md-1 col-md-4 offset-lg-1 col-lg-4 progress-container">
+                <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-4 progress-container">
                     <span class="skill-name">JavaScript</span><span class="value">75</span>
                     <progress class="progressbar" max="100" value="75">90%</progress>
                 </div>
-                <div class="offset-2 col-8 offset-md-1 col-md-4 offset-lg-1 col-lg-4 progress-container">
+                <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-4 progress-container">
                     <span class="skill-name">JQuery</span><span class="value">75</span>
                     <progress class="progressbar" max="100" value=75>90%</progress>
                 </div>
@@ -105,7 +111,7 @@
             </div>
             <div class="container certificate-container" id="certificates">
                 <div class="row">
-                    <span class="offset-lg-2 col-lg-10 section-label">Certificates</span>
+                    <span class="offset-lg-1 col-lg-10 section-label">Certificates</span>
                 </div>
                <div class="row">
                 <div class="offset-1 col-5 offset-sm-1 col-sm-5 offset-md-1 col-md-3 offset-lg-1 col-lg-3 certificate">
@@ -149,6 +155,33 @@
                 <img id="image" src="">
             </div>
         </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <span class="offset-lg-1 col-lg-10 section-label">Contact Us</span>
+                </div>
+                <div class="address-card d-flex offset-sm-1 col-sm-5 offset-md-1 col-md-2 offset-lg-1 col-lg-2">
+                    <span class="icon-container"><i class="far fa-address-card icon"></i></span>
+                    <span class="card-heading">Address</span>
+                    <address class="card-details">H.no 127 village Sabli, Hapur</address>
+                </div>
+                <div class="address-card d-flex offset-sm-1 col-sm-5 offset-md-1 col-md-2 offset-lg-1 col-lg-2">
+                    <span class="icon-container"><i class="far fa-address-card icon"></i></span>
+                    <span class="card-heading">Address</span>
+                    <address class="card-details">H.no 127 village Sabli, Hapur</address>
+                </div>
+                <div class="address-card d-flex offset-sm-1 col-sm-5 offset-md-1 col-md-2 offset-lg-1 col-lg-2">
+                    <span class="icon-container"><i class="far fa-address-card icon"></i></span>
+                    <span class="card-heading">Address</span>
+                    <address class="card-details">H.no 127 village Sabli, Hapur</address>
+                </div>
+                <div class="address-card d-flex offset-sm-1 col-sm-5 offset-md-1 col-md-2 offset-lg-1 col-lg-2">
+                    <span class="icon-container"><i class="far fa-address-card icon"></i></span>
+                    <span class="card-heading">Address</span>
+                    <address class="card-details">H.no 127 village Sabli, Hapur</address>
+                </div>
+            </div>
+        </footer>
         
         
         <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
