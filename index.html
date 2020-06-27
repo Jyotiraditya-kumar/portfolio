@@ -176,15 +176,15 @@
             <span>How Can we help you</span>
             <form>
                 <label for="Name">Name</label>
-                <input type="text" name="Name" id="Name" placeholder="Name">
+                <input type="text" name="Name" id="Name" placeholder="Name" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="Email" placeholder="Email">
+                <input type="email" id="email" name="Email" placeholder="Email" required pattern=".+@.+[.].+">
                 <label for="mob">Mobile No.</label>
-                <input type="tel" name="Mob" id="mob" placeholder="Mobile No.">
+                <input type="tel" name="Mob" id="mob" placeholder="Mobile No." pattern="[1-9]{10}">
                 <label for="occupation">Occupation</label>
                 <input type="text" id="occupation" name="occupation" placeholder="Occupation">
                 <label for="message">Message</label>
-                <textarea placeholder="Your Message...." id="message" name="message"></textarea>
+                <textarea placeholder="Your Message...." id="message" name="message" required></textarea>
                 <input type="submit">
             </form>
             <!-- </div> -->
